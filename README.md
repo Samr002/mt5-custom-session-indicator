@@ -1,9 +1,3 @@
-<p align="center">
-  <!-- === HEADER IMAGE === -->
-  <!-- Replace the src with the path to your uploaded image -->
-  <img src="header-sessionbox.png" alt="Custom Session Indicator Showcase" width="800"/>
-</p>
-
 # Custom Session Indicator for MetaTrader 5
 
 <p align="center">
@@ -16,6 +10,12 @@
 </p>
 
 A flexible and highly customizable indicator for MetaTrader 5 (MT5) that allows you to draw session boxes for any time period directly on your chart. Designed to help traders visualize and analyze price action during specific trading hours with full timezone support.
+
+<p align="center">
+  <!-- === HEADER IMAGE === -->
+  <!-- Replace the src with the path to your uploaded image -->
+  <img src="header-sessionbox.png" alt="Custom Session Indicator Showcase" width="800"/>
+</p>
 
 ---
 
