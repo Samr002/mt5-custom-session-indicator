@@ -14,7 +14,7 @@ A flexible and highly customizable indicator for MetaTrader 5 (MT5) that allows 
 <p align="center">
   <!-- === HEADER IMAGE === -->
   <!-- Replace the src with the path to your uploaded image -->
-  <img src="header-sessionbox.png" alt="Custom Session Indicator Showcase" width="800"/>
+  <img src="header-sessionbox.png" alt="Custom Session Indicator Showcase" width="400"/>
 </p>
 
 ---
@@ -38,7 +38,7 @@ A picture is worth a thousand words, but a GIF is worth a million! Here’s the 
   <!-- === GIF DEMO === -->
   <!-- Create a short GIF showing the indicator being added to the chart and its features. -->
   <!-- Tools like ScreenToGif or GIPHY Capture are great for this. -->
-  <img src="screenshot-sessionbox.png" alt="Custom Session Indicator ScreenShot" width="700"/>
+  <img src="screenshot-sessionbox.png" alt="Custom Session Indicator ScreenShot" width="800"/>
 </p>
 
 ---
