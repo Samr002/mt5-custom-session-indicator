@@ -25,10 +25,10 @@ The Custom Session indicator is a powerful tool for traders who focus on session
     *   Open your MetaTrader 5 platform.
     *   Go to `File` -> `Open Data Folder`.
     *   Navigate to the `MQL5` -> `Indicators` folder.
-    *   Copy the `CustomSession.mq5` file into this folder.
+    *   Copy the `SessionBOX.ex5` file into this folder.
 3.  **Activation:**
     *   Restart MetaTrader 5 or refresh the indicator list in the `Navigator` window.
-    *   Drag the "CustomSession" indicator from the `Navigator` onto your chart.
+    *   Drag the "SessionBOX" indicator from the `Navigator` onto your chart.
 4.  **Configuration:** Adjust the indicator's settings in the "Inputs" tab to your preferences.
 
 ## Input Parameters
