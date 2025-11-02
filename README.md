@@ -1,73 +1,118 @@
+<p align="center">
+  <!-- === HEADER IMAGE === -->
+  <!-- Replace the src with the path to your uploaded image -->
+  <img src="screenshot-sessionbox.png" alt="Custom Session Indicator Showcase" width="800"/>
+</p>
+
 # Custom Session Indicator for MetaTrader 5
 
-This is a flexible and highly customizable indicator for MetaTrader 5 (MT5) that allows you to draw session boxes for any time period directly on your chart. It's designed to help traders visualize and analyze price action during specific trading hours, such as the New York session, London session, or any other custom time frame you define.
+<p align="center">
+  <!-- === BADGES === -->
+  <!-- These badges add a professional touch. You can create your own or modify these. -->
+  <img src="https://img.shields.io/badge/Platform-MetaTrader_5-blue" alt="Platform: MT5">
+  <img src="https://img.shields.io/badge/Language-MQL5-orange" alt="Language: MQL5">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License: MIT">
+  <img src="https://img.shields.io/badge/Maintained-Yes-brightgreen" alt="Maintained: Yes">
+</p>
 
+A flexible and highly customizable indicator for MetaTrader 5 (MT5) that allows you to draw session boxes for any time period directly on your chart. Designed to help traders visualize and analyze price action during specific trading hours with full timezone support.
 
+---
 
-## Description
+## ✨ Key Features
 
-The Custom Session indicator is a powerful tool for traders who focus on session-based strategies. It automatically draws a box around the high and low of a specified time period each day, making it easy to spot key levels of support and resistance. The indicator is fully customizable, allowing you to adjust the session times, timezone, colors, and other visual elements to fit your trading style.
+*   **🎯 Fully Customizable Sessions:** Define the exact start and end time for any trading session (e.g., New York, London, Tokyo, or your own custom hours).
+*   **🌍 Universal Timezone Support:** An intelligent timezone offset lets you track sessions from anywhere in the world, regardless of your broker's server time.
+*   **🎨 Rich Visual Customization:** Control the colors, styles, and width of session boxes, borders, and the middle line to match your chart's theme.
+*   **✍️ Session Labels:** Add custom text labels to your session boxes for quick identification.
+*   **📈 Automatic High/Low Detection:** Automatically finds and plots the high and low within the defined session, creating key support and resistance levels.
+*   **⚙️ Lightweight & Efficient:** Optimized to run smoothly without slowing down your MT5 platform.
 
-## Features
+---
 
-*   **Customizable Session Times:** Define the exact start and end time of the session you want to track.
-*   **Timezone Offset:** Easily adjust the session times to any timezone, so you can track sessions from around the world, regardless of your broker's server time.
-*   **Visual Customization:** Control the colors of the session box, border lines, and middle line. You can also adjust the line width and style.
-*   **Session Labels:** Add a custom text label to your session boxes to easily identify them. You can control the label's position, font size, and color.
-*   **Middle Line:** Optionally display a middle line within the session box, which can act as a significant price level.
-*   **Automatic Broker Timezone Detection:** The indicator automatically detects your broker's GMT offset, simplifying the timezone setup.
-*   **Clean and Efficient:** The indicator is designed to be lightweight and efficient, so it won't slow down your trading platform.
+## 🚀 Live Demo
 
-## How to Use
+A picture is worth a thousand words, but a GIF is worth a million! Here’s the indicator in action:
 
-1.  **Download:** Download the `CustomSession.mq5` file from this repository.
-2.  **Installation:**
-    *   Open your MetaTrader 5 platform.
-    *   Go to `File` -> `Open Data Folder`.
-    *   Navigate to the `MQL5` -> `Indicators` folder.
-    *   Copy the `SessionBOX.ex5` file into this folder.
-3.  **Activation:**
-    *   Restart MetaTrader 5 or refresh the indicator list in the `Navigator` window.
-    *   Drag the "SessionBOX" indicator from the `Navigator` onto your chart.
-4.  **Configuration:** Adjust the indicator's settings in the "Inputs" tab to your preferences.
+<p align="center">
+  <!-- === GIF DEMO === -->
+  <!-- Create a short GIF showing the indicator being added to the chart and its features. -->
+  <!-- Tools like ScreenToGif or GIPHY Capture are great for this. -->
+  <img src="assets/indicator-demo.gif" alt="Custom Session Indicator Demo" width="700"/>
+</p>
 
-## Input Parameters
+---
 
-### Session Time Settings
+## 🛠️ Installation & Setup
 
-*   `SessionStartHour`: The hour when the session starts (0-23).
-*   `SessionStartMinute`: The minute when the session starts (0-59).
-*   `SessionEndHour`: The hour when the session ends (0-23).
-*   `SessionEndMinute`: The minute when the session ends (0-59).
-*   `TimezoneOffsetHours`: The GMT offset of the session's timezone (e.g., -4 for New York).
-*   `TimezoneOffsetMinutes`: The minute offset of the session's timezone.
+Getting started is simple. Follow these steps:
 
-### Display Settings
+1.  **Download:** Grab the `CustomSession.mq5` file from this repository.
+2.  **Install:**
+    *   Open MetaTrader 5.
+    *   Go to `File` > `Open Data Folder`.
+    *   Navigate to `MQL5` > `Indicators`.
+    *   Copy the `CustomSession.mq5` file into this folder.
+3.  **Activate:**
+    *   Restart MT5 or right-click on "Indicators" in the `Navigator` window and choose `Refresh`.
+    *   Drag **"CustomSession"** from the Navigator onto your chart.
+4.  **Configure:** Adjust the settings in the **"Inputs"** tab to match your trading strategy.
 
-*   `MaxBoxes`: The maximum number of session boxes to display on the chart.
-*   `BoxColor`: The fill color of the session box.
-*   `LineColor`: The color of the session box's border lines.
-*   `LineWidth`: The width of the border lines.
-*   `LineStyle`: The style of the border lines (e.g., solid, dashed, dotted).
+---
 
-### Middle Line Settings
+## ⚙️ Input Parameters
 
-*   `ShowMiddleLine`: Set to `true` to display the middle line, or `false` to hide it.
-*   `MiddleLineColor`: The color of the middle line.
-*   `MiddleLineStyle`: The style of the middle line.
+All parameters are fully configurable to suit your needs.
 
-### Session Label Settings
+<details>
+<summary><strong>🕒 Session Time Settings</strong> (Click to expand)</summary>
 
-*   `SessionLabelText`: The text to display as the session label (leave empty for no label).
-*   `LabelPosition`: The position of the label (Top, Middle, or Bottom of the session box).
-*   `LabelFontSize`: The font size of the label.
-*   `LabelColor`: The color of the label.
+| Parameter | Description | Default |
+| :--- | :--- | :--- |
+| `SessionStartHour` | The hour the session starts (0-23). | `9` |
+| `SessionStartMinute` | The minute the session starts (0-59). | `30` |
+| `SessionEndHour` | The hour the session ends (0-23). | `12` |
+| `SessionEndMinute` | The minute the session ends (0-59). | `30` |
+| `TimezoneOffsetHours` | The GMT offset for the session's timezone (e.g., `-4` for NY). | `-4` |
+| `TimezoneOffsetMinutes`| The minute offset for the timezone. | `0` |
 
-## Author
+</details>
+
+<details>
+<summary><strong>🎨 Display Settings</strong> (Click to expand)</summary>
+
+| Parameter | Description | Default |
+| :--- | :--- | :--- |
+| `MaxBoxes` | The maximum number of historical session boxes to display. | `30` |
+| `BoxColor` | The fill color of the session box. | `LightBlue` |
+| `LineColor` | The color of the session box border. | `DarkBlue` |
+| `LineWidth` | The width of the border lines. | `2` |
+| `LineStyle` | The style of the border lines (Solid, Dash, Dot, etc.). | `STYLE_SOLID`|
+
+</details>
+
+<details>
+<summary><strong>✒️ Label & Middle Line Settings</strong> (Click to expand)</summary>
+
+| Parameter | Description | Default |
+| :--- | :--- | :--- |
+| `ShowMiddleLine` | Show or hide the middle line of the session. | `true` |
+| `MiddleLineColor` | The color of the middle line. | `Gray` |
+| `MiddleLineStyle` | The style of the middle line. | `STYLE_DOT` |
+| `SessionLabelText` | Custom text for the session label (empty = no label). | `""` |
+| `LabelPosition` | Position of the label (Top, Middle, Bottom). | `LABEL_TOP` |
+| `LabelFontSize` | The font size of the label text. | `10` |
+| `LabelColor` | The color of the label text. | `DarkBlue` |
+
+</details>
+
+---
+
+## 👤 Author
 
 *   **CallMeAM**
-*   Telegram: [https://t.me/amirmasoud_rsli](https://t.me/amirmasoud_rsli)
+*   **Telegram:** [https://t.me/amirmasoud_rsli](https://t.me/amirmasoud_rsli)
 
-## License
+## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
